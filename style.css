@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e5d8c0;
+    color: #4b3c2a;
+    padding: 20px;
+}
+
+/* Tela Inicial */
+#welcome-screen {
+    text-align: center;
+    background-color: #d4b89e;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#language-selector {
+    margin-top: 15px;
+}
+
+/* Conteúdo Principal */
+#main-content {
+    display: none; /* Oculta inicialmente */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #d4b89e;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #593d2c;
+}
+
+/* Botões (iguais aos originais) */
+button {
+    background-color: #4b3c2a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #593d2c;
+}
+
+/* Parágrafos (ocultos inicialmente) */
+p {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+}

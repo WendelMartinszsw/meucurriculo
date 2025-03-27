@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Wendel Santos Martins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tela Inicial -->
+    <div id="welcome-screen">
+        <h1 id="welcome-message">Bem-vindo ao Meu Currículo</h1>
+        <p id="description">Clique no botão abaixo para acessar.</p>
+        <button onclick="enterSite()">Entrar</button>
+        <div id="language-selector">
+            <button onclick="mudaIdioma('pt')">Português</button>
+            <button onclick="mudaIdioma('en')">English</button>
+            <button onclick="mudaIdioma('es')">Español</button>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal (oculto inicialmente) -->
+    <div id="main-content">
+        <header>
+            <h1>Wendel Santos Martins</h1>
+            <p>Estudante de Sistemas de Informação - UNEX</p>
+        </header>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <button onclick="toggleP('sobre-texto')">Abrir/Fechar</button>
+            <p id="sobre-texto">Meu nome é Wendel Santos Martins, sou um estudante à procura de um estágio...</p>
+        </section>
+
+        <section id="educacao">
+            <h2>Educação</h2>
+            <button onclick="toggleP('educacao-texto')">Abrir/Fechar</button>
+            <p id="educacao-texto"><strong>Ensino Médio:</strong> Instituto Federal de Ciências e Tecnologia - Edificações<br>
+                <strong>Cursando:</strong> Sistemas de Informação - 2º semestre na UNEX</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <button onclick="toggleP('habilidades-texto')">Abrir/Fechar</button>
+            <p id="habilidades-texto"><strong>Técnicas:</strong> Conhecimento básico em linguagens de programação: JS, CSS, HTML<br>
+                <strong>Interpessoais:</strong> Comunicação eficaz, Trabalho em equipe, Liderança, Resolução de problemas, Adaptabilidade, Gerenciamento de tempo, Pensamento criativo</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <button onclick="toggleP('contato-texto')">Abrir/Fechar</button>
+            <p id="contato-texto"><strong>Email:</strong> wendel.martins2017@hotmail.com<br>
+                <strong>Telefone:</strong> 73999549305</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
